@@ -8,11 +8,11 @@ function agregarAmigo() {
     if (nombreAmigo && amigos.length < 5) {
         amigos.push(nombreAmigo);
         actualizarLista();
-        input.value = ''; // Limpiar el campo de entrada
+        input.value = ''; // Restablecer el campo de texto
     } else if (amigos.length >= 5) {
         alert("Ya has añadido 5 amigos.");
     } else {
-        alert("Por favor, ingresa un nombre válido.");
+        alert("Por favor, inserte un nombre.");
     }
 }
 
